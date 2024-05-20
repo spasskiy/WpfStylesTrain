@@ -1,0 +1,23 @@
+﻿<Window x:Class="ChildeWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChildeWpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <Grid Margin="20" Background="#212B38">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="Base style button" Click="Btn_Click"/>
+        <Button Grid.Row="1" Content="Key style button" Style="{StaticResource SupWindowButton}" Click="Btn_Click"/>
+
+    </Grid>
+
+
+</Window>
